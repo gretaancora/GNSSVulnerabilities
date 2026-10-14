@@ -36,7 +36,7 @@ While integrating Inertial Navigation Systems (INS) via Error-State Kalman Filte
 * **Maritime Auto-Spoofing (Red Sea / Strait of Hormuz):** SDR-driven AIS manipulation generating ghost vessel trajectories.
 
 ### 4. Integrated Navigation Systems (INS/GNSS & ESKF)
-* **INS Error Dynamics:** Uncalibrated accelerometer ($O(\Delta t^2)$) and gyroscope ($O(\Delta t^3)$) error propagation models.
+* **INS Error Dynamics:** Uncalibrated accelerometer ($$O(\Delta t^2)$$) and gyroscope ($$O(\Delta t^3)$$) error propagation models.
 * **Architectural Evolution:** Loosely coupled vs. Tightly coupled vs. Ultra-tightly coupled sensor fusion.
 * **Error-State Kalman Filter (ESKF):** 
   * Separation of True, Nominal, and Error states.
