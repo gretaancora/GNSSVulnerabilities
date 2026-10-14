@@ -49,7 +49,7 @@ Analysis of mathematical deception against loosely coupled UAV architectures (9-
 2. **Acceleration Control Generation:** Computing virtual control vector $a^* = a_k - a_k^s$ using proportional-derivative tracking matrices ($K_{PD}$).
 3. **Apparent State Synthesis:** Constructing fake position/velocity estimates within filter tolerance margins.
 4. **Kalman Gain Inversion:** Reversing steady-state Kalman Gain ($K^s = \lim_{n\to\infty} K_k$) to generate synthetic GNSS coordinates ($X_{k,gnss}^s$):
-   $$X_{k,gnss}^s = \hat{X}_{k|k-1,ins}^s - (K^s)^{-1} \left( \hat{X}_{k|k-1,ins}^s - \hat{X}_k^s \right)$$
+   $$X_{k,gnss}^s = \hat{X}_{k|k-1,ins}^s - (K^s)^{-1} \left( \hat{X}\_{k|k-1,ins}^s - \hat{X}_k^s \right)$$
 5. **Physical Hardware Constraints:** Strict synchronization requirements ($\le 0.1$ chip code phase difference, $\le 10\text{ Hz}$ carrier Doppler offset; Radar accuracy thresholds: $\delta p < 30\text{ m}$, $\delta v < 1\text{ m/s}$).
 
 ---
